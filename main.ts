@@ -372,10 +372,7 @@ namespace Kitspire {
 
     }
 
-    /**
-     * *****************************************************************
-     * @param index
-     */   
+   
 
     //% blockId=HelloBot_RGB_Car_Program block="RGB_Car_Program"
     //% weight=99
@@ -404,7 +401,6 @@ namespace Kitspire {
     //% blockId=HelloBot_RGB_RArm_Program block="RGB_RArm_Program"
 		//% weight=97
 		//% blockGap=10
-		//% color="#FFA500"
 		//% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_RArm_Program(): neopixel.Strip {
          
