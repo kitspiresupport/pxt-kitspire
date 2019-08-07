@@ -1,6 +1,6 @@
-# HelloBot
+# Kitspire
 
-Extension for Yahboom HelloBot
+Extension for Yahboom Kitspire
 
 ## License
 
@@ -9,4 +9,3 @@ MIT
 ## Supported targets
 
 * for PXT/microbit
-(The metadata above is needed for package search.)
