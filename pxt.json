@@ -1,0 +1,24 @@
+{
+    "name": "HelloBot",
+    "version": "2.0.0",
+    "description": "Extension for YahBoom HelloBot",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "neopixel": "github:microsoft/pxt-neopixel#v0.3.10",
+        "Mbit_IR":  "github:lzty634158/yahboom_mbit_IR"
+	
+
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/zh-cn/HelloBot-strings.json",
+        "_locales/zh-tw/HelloBot-strings.json"
+
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
+}
