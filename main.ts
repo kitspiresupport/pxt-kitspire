@@ -1,6 +1,6 @@
 
 
-//% weight=20 icon="K"
+//% color="#FFA500"  weight=20 icon="K"
 namespace Kitspire {
 
     const PCA9685_ADD = 0x41
@@ -75,8 +75,10 @@ namespace Kitspire {
     export enum enPos {
 
         //% blockId="LeftState" block="LeftState"
+	   //% color="#FFA500"
         LeftState = 0,
         //% blockId="RightState" block="RightState"
+	     //% color="#FFA500"
         RightState = 1
     }
 
