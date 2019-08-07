@@ -1,6 +1,6 @@
 
 
-//% color="#006400" weight=20 icon="K"
+//% color="#FFA500" weight=20 icon="K"
 namespace Kitspire {
 
     const PCA9685_ADD = 0x41
