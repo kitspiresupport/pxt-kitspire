@@ -183,16 +183,41 @@ namespace Kitspire {
         pins.i2cWriteBuffer(PCA9685_ADD, buf);
     }
 
-    function Car_run(speed1: number, speed2: number) {
+    function Car_run(speed1: number) {
 
         speed1 = speed1 * 16; // map 350 to 4096
-        speed2 = speed2 * 16;
+     //   speed2 = speed2 * 16;
         if (speed1 >= 4096) {
             speed1 = 4095
         }
         if (speed1 <= 350) {
             speed1 = 350
         }
+      /* if (speed2 >= 4096) {
+            speed2 = 4095
+        }
+        if (speed2 <= 350) {
+            speed2 = 350
+        }*/
+
+        setPwm(12, 0, speed1);
+        setPwm(13, 0, 0);
+
+       // setPwm(15, 0, speed2);
+       // setPwm(14, 0, 0);
+     
+    }
+	
+    function Car_run( speed2: number) {
+
+       // speed1 = speed1 * 16; // map 350 to 4096
+        speed2 = speed2 * 16;
+      /*  if (speed1 >= 4096) {
+            speed1 = 4095
+        }
+        if (speed1 <= 350) {
+            speed1 = 350
+        }*/
         if (speed2 >= 4096) {
             speed2 = 4095
         }
@@ -200,16 +225,12 @@ namespace Kitspire {
             speed2 = 350
         }
 
-        setPwm(12, 0, speed1);
-        setPwm(13, 0, 0);
+      //  setPwm(12, 0, speed1);
+        //setPwm(13, 0, 0);
 
         setPwm(15, 0, speed2);
         setPwm(14, 0, 0);
-        //pins.digitalWritePin(DigitalPin.P16, 1);
-       // pins.analogWritePin(AnalogPin.P1, 1023-speed); //速度控制
-
-       // pins.analogWritePin(AnalogPin.P0, speed);//速度控制
-       // pins.digitalWritePin(DigitalPin.P8, 0);
+     
     }
 
     function Car_back(speed1: number, speed2: number) {
